@@ -1,9 +1,62 @@
-body {
-    
-    background-color: lavender;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,200&family=Roboto:ital,wght@0,300;0,700;1,300&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    cursor: url(images/cursor.png), auto;
 }
 
-.title {
-    color: red;
+html {
+    position: relative;
+    min-height: 100%;
     
+}
+body {
+    display: grid;
+    justify-content: center;
+    background-color: lavender;
+    font-family:'Roboto Mono', monospace;
+    margin-bottom: 100px;
+}
+
+header {
+    margin: 40px;
+    padding: 18px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.images, .about {
+    background-color: coral;
+    border-style: solid;
+    border-color: red;
+    border-width: 15px;
+    padding: 18px;
+    margin: 50px;
+}
+
+.goat {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: goatdance 5s linear 2s infinite alternate;
+}
+
+@keyframes goatdance {
+    0%   {left:0px; top:0px;}
+  100% {left:500px; top:0px;}
+}
+
+.grass {
+   background-color: green;
+   border-style: dotted;
+   border-color: yellowgreen;
+   border-width: 5px;
+   padding: 18px;
+   width: 500px;
+   height: 10px;
+   margin: 2%;
 }

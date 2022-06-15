@@ -123,3 +123,35 @@ li {
 .homepage-img {
     margin-left: 300px;
 }
+
+.img-box {
+    display: none;
+}
+
+.slide{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.slide-img {
+    padding: 42px;
+    margin: 20px auto;
+    flex-grow: 2;
+    width: 600px;
+}
+
+.returnbtn {
+    padding: 8px;
+    margin: 8px;
+    font-size: 11px;
+    flex-grow: 1;
+}
+
+.slideBtn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px;
+    margin: 8px auto
+}

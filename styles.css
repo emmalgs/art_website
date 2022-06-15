@@ -19,8 +19,8 @@ body {
     grid-template-columns: 100px 50px 1fr 1fr;
     grid-template-rows: 1fr 450px 1fr;
     grid-template-areas: 
-    ". header header header"
-    "sidebar . . main"
+    ". header header ."
+    "sidebar . main main"
     "footer footer footer footer";
 }
 
@@ -108,4 +108,18 @@ a {
 li {
     list-style-type: none;
     padding: 4px;
+}
+
+.thumbnail {
+    padding: 8px;
+}
+
+.year {
+    padding: 8px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.homepage-img {
+    margin-left: 300px;
 }

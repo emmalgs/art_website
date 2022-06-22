@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    
+}
+
+.container {
+    padding: 24px;
+    margin: 18px;
+    width: 600px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 600px;
+    height: auto;
+}
+
+.slides img {
+    width: 600px;
+    height: auto;
+}
+
+.returnbtn {
+    padding: 8px;
+    margin: 8px;
+    font-size: 11px;
+    flex-grow: 1;
+}
+
+.slideBtn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px;
+    margin: 8px auto
+}

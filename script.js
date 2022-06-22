@@ -14,23 +14,29 @@ for(i = 0; i < dropdown.length; i++) {
     });
 }
 
-let slideIndex = 1;
-showSlides(slideIndex);
+const carouselSlide = document.querySelector('.slides')
+const carouselImages = document.querySelectorAll('.slides img');
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
+//buttons
+const prev = document.querySelector('#prev');
+const next = document.querySelector('#next');
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
+//counter
+let counter = 1;
+const size = carouselImages[0].clientWidth;
 
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName('img-box');
-    if (n > slides.length) {slideIndex = 1}
-    if (n< 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display='none';
-    }
-}
+carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+//button listeners
+
+next.addEventListener('click', () => {
+    carouselSlide.style.transition = 'tranform 0.4s ease-in-out';
+    counter++;
+    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+})
+
+prev.addEventListener('click', () => {
+    carouselSlide.style.transition = 'tranform 0.4s ease-in-out';
+    counter--;
+    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+})
